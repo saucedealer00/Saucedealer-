@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SauceDealer</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Space Grotesk',sans-serif;background:#050505;color:white;overflow:hidden;display:flex;justify-content:center;align-items:center;height:100vh;}
+body::before{content:"";position:absolute;width:180%;height:180%;
+background:
+radial-gradient(circle at 20% 20%,rgba(0,229,255,.15),transparent 25%),
+radial-gradient(circle at 80% 40%,rgba(139,92,246,.18),transparent 25%),
+radial-gradient(circle at 50% 80%,rgba(255,255,255,.05),transparent 35%);
+animation:move 20s linear infinite alternate;filter:blur(70px);}
+@keyframes move{0%{transform:translate(-10%,-10%) rotate(0deg);}100%{transform:translate(10%,10%) rotate(10deg);}}
+.container{position:relative;z-index:2;text-align:center;width:90%;max-width:420px;}
+h1{font-size:4rem;letter-spacing:10px;font-weight:700;margin-bottom:10px;}
+.subtitle{color:#888;font-size:1rem;margin-bottom:50px;letter-spacing:4px;}
+.links{display:flex;flex-direction:column;gap:18px;}
+a{text-decoration:none;color:white;padding:18px;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.04);backdrop-filter:blur(20px);border-radius:18px;font-size:1.1rem;transition:.35s;}
+a:hover{transform:translateY(-5px);border-color:#00e5ff;box-shadow:0 0 20px rgba(0,229,255,.4),0 0 50px rgba(0,229,255,.15);}
+.footer{margin-top:45px;font-size:.8rem;color:#555;letter-spacing:2px;}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>SAUCEDEALER</h1>
+<p class="subtitle">MELODIC TECHNO • HARD TECHNO</p>
+<div class="links">
+<a href="https://spotify.com" target="_blank">🎧 Spotify</a>
+<a href="https://youtube.com" target="_blank">▶ YouTube</a>
+<a href="https://soundcloud.com" target="_blank">☁ SoundCloud</a>
+</div>
+<div class="footer">TURN THE VOLUME UP</div>
+</div>
+</body>
+</html>
